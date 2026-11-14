@@ -1,0 +1,42 @@
+{
+  "name": "fastgpt-plugin-deepseek-tools",
+  "version": "1.0.0",
+  "description": "Official DeepSeek Search, Fetch, OCR, ASR and TTS tools for FastGPT",
+  "type": "module",
+  "main": "dist/index.js",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c121914yu/fastgpt-plugin-deepseek-tools.git"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "packageManager": "pnpm@10.28.2",
+  "scripts": {
+    "build": "fastgpt-plugin build --minify",
+    "build:dev": "fastgpt-plugin build",
+    "check": "fastgpt-plugin check --entry . --output ./dist",
+    "pack": "fastgpt-plugin pack --name deepSeekTools",
+    "debug": "fastgpt-plugin debug .",
+    "test": "vitest run",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fastgpt-plugin/sdk-factory": "1.1.0",
+    "ipaddr.js": "2.5.0",
+    "undici": "8.12.4",
+    "zod": "4.6.6"
+  },
+  "devDependencies": {
+    "@fastgpt-plugin/cli": "0.2.0",
+    "@types/node": "22.19.19",
+    "typescript": "5.9.3",
+    "vitest": "4.1.8"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
