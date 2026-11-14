@@ -4,6 +4,8 @@
 
 插件 ID：`deepSeekTools`，版本：`1.0.0`。这是独立的新插件，源码仓库、安装包和社区索引均与旧插件 `deepSeekSearch@0.1.0` 分开。旧搜索插件无需升级或迁移，现有工作流不受本工具集影响。需要新增能力时安装本工具集，在工作流中选择相应子工具。
 
+字段标题和说明遵循 `x-i18n` 多语言规范，按界面语言分别显示中文或英文，普通 `title` / `description` 使用英文兼容值。字段键名和运行时 SDK 依赖保持稳定。
+
 ## 配置与数据流
 
 在 [DeepSeek 开放平台](https://platform.deepseek.com/api_keys) 创建 API Key，填写到工具集的密钥字段 `apiKey`。该字段声明为 `isSecret: true`，无需设置模型或 Base URL。

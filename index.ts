@@ -13,8 +13,8 @@ export default defineToolSet({
       'zh-CN': '通过 DeepSeek 官方接口提供网页搜索、网页抓取、文字识别、语音识别和语音合成，共用一个 API Key。'
     },
     versionDescription: {
-      en: 'Initial release with five independent DeepSeek API tools.',
-      'zh-CN': '首个版本，包含五项 DeepSeek API 工具，独立于原搜索插件。'
+      en: 'Five independent DeepSeek API tools with localized field titles and descriptions.',
+      'zh-CN': '五项独立 DeepSeek API 工具，字段标题和说明遵循多语言规范。'
     },
     author: 'c121914yu',
     repoUrl: 'https://github.com/c121914yu/fastgpt-plugin-deepseek-tools',
